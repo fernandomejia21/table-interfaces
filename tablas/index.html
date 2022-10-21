@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>tabla de precios</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+  
+<body>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th class="table-warning">Platillo</th>
+                <th class="table-warning">Nombre del platillo</th>
+                <th class="table-warning">Pais</th>
+                <th class="table-warning">Receta</th>
+                <th class="table-warning">Precio</th>
+                <th class="table-warning">Opciones</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <tr>
+                <td>
+                    <figure class="figure">
+                        <img src="img/pupusas-comida.jpg" width="125px" class="figure-img img-fluid rounded" alt="Imagen de Empleada Lilian">
+                        <figcaption class="figure-caption">pupusas</figcaption>
+                    </figure>
+                </td>
+                <td>pupusas</td>
+                <td>El Salvador</td>
+                <td><span class="badge text-bg-info"><i style="color: aliceblue ;" onclick="mensaje1()">Receta</i></span></td>
+                <td><span class="badge text-bg-warning"><i class="bi bi-cash" style="font-size: 1rem"></i> $1.60</span></td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Restaurantes
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item" type="button">Mama chuz</button></li>
+                          <li><button class="dropdown-item" type="button">Pedidos ya</button></li>
+                          <li><button class="dropdown-item" type="button">Hugo app</button></li>
+                        </ul>
+                      </div>
+                </td>
+            </tr>
+            
+           
+            <tr>
+                <td>
+                    <figure class="figure">
+                        <img src="img/elotes-locos.jpg" width="125x" class="figure-img img-fluid rounded" alt="Imagen de Empleada Lilian">
+                        <figcaption class="figure-caption">Elotes locos</figcaption>
+                    </figure>
+                </td>
+                <td>Elototes locos</td>
+                <td>El Salvador</td>
+                <td><span class="badge text-bg-info"><i style="color: aliceblue ;" onclick="mensaje()">Receta</i></span></td>
+               
+                
+                <td><span class="badge text-bg-warning"><i class="bi bi-cash" style="font-size: 1rem"></i> $0.60</span></td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Restaurantes
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item" type="button">Mama chuz</button></li>
+                          <li><button class="dropdown-item" type="button">Boqueron</button></li>
+                          <li><button class="dropdown-item" type="button">Pedidos ya</button></li>
+                        </ul>
+                      </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure class="figure">
+                        <img src="img/207-chilaquiles-verdes.jpg" width="125px" class="figure-img img-fluid rounded" alt="chilaquiles-verdes">
+                        <figcaption class="figure-caption">chilaquiles verdes</figcaption>
+                    </figure>
+                </td>
+                <td>chilaquiles</td>
+                <td>Mexico</td>
+                <td><span class="badge text-bg-info"><i style="color: aliceblue ;" onclick="mensaje2 ()">Receta</i></span></td>
+                
+                <td><span class="badge text-bg-warning"><i class="bi bi-cash" style="font-size: 1rem"></i> $1.00</span></td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Restaurantes
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item" type="button">Mama chuz</button></li>
+                          <li><button class="dropdown-item" type="button">Pedidos y</button></li>
+                          <li><button class="dropdown-item" type="button">Hugo app</button></li>
+                        </ul>
+                      </div>
+                    
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>$$$$$</th>
+                <th></th>
+            </tr>
+        </tfoot>        
+    </table>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        function mensaje() {
+            Swal.fire({
+                title: 'Receta',
+                text: 'Receta',                
+                
+               
+                html:
+                    'paso 1.Primero pelaremos (quitaremos la tuza y los pelitos al elote) paso 2 Luego ya limpios los pondremos a sancochar en una olla con sal y agua.. hasta que estén bien sancochados. paso 3.Cuando ya están cocidos nuestros elotes los sacaremos para que escurran el agua un poco. paso 4.Ahora vamos a meterle un palillo grande y grueso (son los palillos donde se introduce cada trozo de fruta para las brochetas de frutas)eso ayuda para sostener el elote loco, Paso 5 Cuando ya les hemos insertado los palillos a los elotes sancochados  vamos agarrarlos del palillo y untaremos todo el elote de mayonesa con la ayuda de un cuchillo sin filo o una cuchara especial para untar mayonesa. ' +                    
+                    'paso 6. Seguido echaremos en forma de línea delgadas para arriba y para abajo en todo el elote como haciendo "zig zag" la mostaza, salsa negra espesa y la ketchup... y al final rociaremos sobre todo el elote el queso rallado girando el elote para que quede cubierto  y listo para disfrutar de unos elotes locos 100% Salvadoreños. ',
+                    
+                                      
+                    focusConfirm: false,
+                    confirmButtonText:
+                        '<i class="fa fa-thumbs-up"></i> De acuerdo!',
+                                
+                })
+            
+        }
+
+        function mensaje1() {
+            Swal.fire({
+                title: 'Receta',
+                text: 'Receta',                
+                
+               
+                html:
+                    'paso 1:Mezclar la harina de maíz, con agua hasta formar la masa. paso 2:Preparar el quesillo o queso mozarella hasta que no queden grumos. paso 3:Hacer una tortilla, colocar en el centro el quesillo o queso mozarella, palmearlo hasta formar una tortilla mediana. paso 4:Es opcional si quieres utilizar el chicharrón, frijoles molidos con el quesillo al centro de la tortilla.  ' +                    
+                    ' paso 5:Colocarlas en una plancha cocinar hasta que este cocida y salga el queso de la tortilla.',
+                    
+                                      
+                    focusConfirm: false,
+                    confirmButtonText:
+                        '<i class="fa fa-thumbs-up"></i> De acuerdo!',
+                                
+                })
+            
+        }
+        function mensaje2() {
+            Swal.fire({
+                title: 'Receta',
+                text: 'Receta',                
+                
+               
+                html:
+                    '1.En una olla con agua hirviendo, cuece los tomates verdes, la cebolla y los chiles por 5 minutos. ' +                    
+                    '2.Muele los ingredientes que cociste junto con el ajo y el cilantro, hasta que obtengas una textura tersa. 3.En un sartén, agrega el aceite vegetal y fríe la salsa, cocina por 5 minutos y reserva., 4.Para los totopos: primero calienta un sartén profundo y luego, calienta suficiente aceite para freír los totopos por 3 minutos. 5.Para el montaje: Coloca una base con los totopos, el pollo deshebrado y agrega la salsa caliente encima. Acompaña con crema, queso y cebolla fileteada. Disfruta. ',
+                    
+                    
+                    
+                                      
+                    focusConfirm: false,
+                    confirmButtonText:
+                        '<i class="fa fa-thumbs-up"></i> De acuerdo!',
+                                
+                })
+            
+        }
+</script>
+
+</body>
+</html>
